@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.logo{
+    margin: 0 23px;
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav ul {
+    background-color: black;
+    color: white;
+    padding: 12px 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+}
+
+.hero {
+    height: 600px;
+    background-image: url('https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHwxMTkzOTE0fHxlbnwwfHx8fHw%3D');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(14, 2, 2);
+    text-align: center;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.social-media {
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+           background: #3B5998;
+            color: white;
+          }
+ .social-media .fa:hover {
+        opacity: 0.7;
+      }
+      .social-media 
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+          }
+      
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: rgb(251, 251, 251);
+}
+
+@media (max-width: 768px) {
+    header, .hero, .content, .social-media, footer {
+        padding: 0 20px;
+    }
+}
